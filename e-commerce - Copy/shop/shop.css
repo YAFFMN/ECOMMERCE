@@ -1,0 +1,218 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/banners/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.banner .up h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    padding: 10px 0 ;
+}
+
+.banner .up p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom:10px ;
+    color: #fff;
+}
+
+/* products  */
+.products h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+.products .up p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom:10px ;
+}
+.products .up p::after{
+    content: '';
+    width: 25%;
+    height: 6px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 20px;
+}
+.pro-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+}
+
+.pro-item{
+    width: 23%;
+    min-width: 275px;
+    padding: 20px;
+    border: 1px solid #fdebeb;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.pro-item:hover{
+    transition: 1s ease;
+    transform: translateY(-10px);
+}
+.pro-item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.des p {
+    margin: 0;
+}
+.des{
+    text-align: start;
+}
+.des h5{
+    font-size: 20px;
+}
+.des .stars{
+    color: goldenrod;
+    padding: 10px 0;
+}
+.des h4{
+    color: #1d968e;
+    margin-bottom: 20px;
+}
+
+.pro-item .cart{
+    color:#1d968e ;
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+}
+.pro-item .cart:hover{
+    background-color: #088178;
+    color: #000;
+}
+@media(max-width:840px){
+    .pro-container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        justify-content: center;
+    }
+}
+@media(max-width:477px){
+    .pro-container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 0.5fr);
+        justify-content: center;
+    }
+    .products h1{
+        font-size: 30px;
+    }
+}
+/* endcollections */
+/* pagintation */
+.paginatation{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.paginatation ul{
+    display: flex;
+    list-style: none;
+}
+.paginatation li{
+    padding: 10px;
+    margin: 5px;
+}
+.paginatation a{
+    text-decoration: none;
+    border: #088178 1px solid;
+    background-color: #088178;
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.paginatation a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+.paginatation a:hover{
+    transition: 1s ease ;
+    font-size: 20px;
+    padding: 20px 25px;
+}
+/* end pagintation */
+/* form   */
+.form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient( to right,#088178,#32beb5 );
+    height: 30vh;
+}
+.form-text{
+    padding: 20px;
+    align-content: center;
+}
+form{
+    align-content: center;
+}
+#email{
+    padding: 15px;
+    border: none;
+    width: 500px;
+    cursor: pointer;
+    outline: none;
+}
+#button{
+    padding: 15px;
+    outline: none;
+    border: solid 1px #fff;
+    background-color:transparent;
+    color: #fff;
+    font-size: 16px ;
+}
+#button:hover{
+    transition: 1s ease;
+    background-color: #024e49;
+    border: 1px solid #024e49;
+}
+@media(max-width:840px){
+    .form{
+        flex-direction: column;
+        align-items: center;
+        min-height: 40vh;
+    }
+    .form-text{
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media(max-width:477px){
+    .form{
+        margin-top: 0px;
+    }
+    #email{
+        max-width: 250px;
+    }
+}
+/* end form */

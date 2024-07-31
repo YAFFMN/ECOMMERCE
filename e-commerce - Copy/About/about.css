@@ -1,0 +1,101 @@
+/* banner section */
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/banners/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.banner .up h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    color: #000;
+    padding: 10px 0 ;
+}
+
+.banner .up p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom:10px ;
+    color: #000;
+}
+/* end banner section */
+/* about us section */
+.about-sec{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.about-sec .text{
+    padding: 20px;
+    margin-left: 20px;
+}
+.about-sec img{
+    width: 600px;
+}
+@media(max-width:850px){
+    .about-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-sec h1{
+        font-size: 30px;
+    }
+    .about-sec img{
+        max-width: 450px;
+    }
+}
+@media(max-width:500px){
+    .about-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-sec h1{
+        font-size: 25px;
+    }
+    .about-sec img{
+        max-width: 250px;
+    }
+
+}
+
+/* end about us section  */
+/* video section */
+.video-sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 ;
+}
+.video-sec h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.video-sec video{
+    align-items: center;
+    width: 700px ;
+    height: 800px;
+}
+@media(max-width:500px){
+    .video-sec h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    .video{
+        max-width: 400px;
+        max-height: 800px ;
+    }
+}
+/* end video section */

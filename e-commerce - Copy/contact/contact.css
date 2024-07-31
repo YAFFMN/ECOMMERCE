@@ -1,0 +1,174 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/banners/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.banner .up h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    color: #000;
+    padding: 10px 0 ;
+}
+
+.banner .up p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom:10px ;
+    color: #000;
+}
+
+.contacts{
+    padding: 40px;
+    display: flex;
+}
+.info ul{
+    list-style: none;
+}
+.info li,
+.info h3,
+.info h4 {
+    margin-bottom:10px ;
+}
+.info #p{
+    margin-left: 20px;
+    color: #333;
+}
+/*  */
+/* map */
+.map{
+    margin-left: 100px;
+}
+
+/* end map */
+
+/* form */
+.form1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form1 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form1 h4{
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.form1 form input,
+.form1 form textarea{
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 20px;
+    width: 600px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.form1 form textarea{
+    height: 40vh;
+}
+.form1 form button{
+    width: 25%;
+    padding: 10px;
+    background-color: #088178;
+    font-size: 15px;
+    border: #088178 1px solid;
+}
+.founder{
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.founder img{
+    border-radius: 50%;
+    width: 85px;
+    object-fit: cover;
+}
+.founder p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+.founder p span{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media(max-width:850px){
+    .contacts{
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .map{
+        margin-left: 0;
+    }
+    .form1{
+        display:flex ;
+        flex-direction: column;
+    }
+}
+@media(max-width:500px){
+    .map{
+        width: 100%;
+        height: 450px;
+    }
+    .form1 form{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    .form1 form input,
+    .form1 form textarea{
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 20px;
+    max-width: 300px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.form1 form textarea{
+    height: 40vh;
+}
+.founder{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.founder img{
+    border-radius: 50%;
+    width: 85px;
+    object-fit: cover;
+}
+.founder p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+.founder p span{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+.iframe{
+    max-width: 400px;
+}
+}
+
+/* end form */

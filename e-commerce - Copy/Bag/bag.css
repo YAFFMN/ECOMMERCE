@@ -1,0 +1,184 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/banners/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+}
+.banner .up h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    color: #000;
+    padding: 10px 0 ;
+}
+
+/*  */
+/* table */
+.store{
+    display: flex;
+    justify-content: space-evenly;
+}
+.store h4{
+    margin: 30px 0;
+}
+.store ul{
+    list-style: none;
+}
+.store p{
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.store img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.store input{
+    padding: 15px 20px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+.store i{
+    margin-bottom: 80px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.store-responsive{
+    display: none;
+}
+
+/* end table */
+/* apply */
+.apply-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart{
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 500px;
+}
+.row{
+    display: flex;
+}
+.row p,
+.row h5{
+    border:#ddd 1px solid ;
+    width: 100%;
+    padding: 15px;
+}
+.cart button{
+    align-items: center;
+    text-align: center;
+    font-size:17px ;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: #088178 solid 1px;
+    background-color: #088178;
+}
+
+.apply-container form h3{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.apply-container form input{
+    padding: 10px 20px;
+    outline: none;
+    width: 400px;
+
+}
+.apply-container form button{
+    align-items: center;
+    text-align: center;
+    font-size:17px ;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: #088178 solid 1px;
+    background-color: #088178;
+}
+@media(max-width:477px){
+    .store{
+        display: none;
+    }
+    .store-responsive{
+        display: initial;
+    }
+    .row-store ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .row-store ul h4{
+        text-align: left;
+        margin: 10px 0;
+    }
+    .store-responsive ul{
+        list-style: none;
+    }
+    .store-responsive img{
+        width: 60px;
+        margin-left: 15px ;
+    }
+    .store-responsive p{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .store-responsive input{
+        width: 70px;
+    }
+    .apply-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart{
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 250px;
+    }
+    .apply-container form h3{
+        margin-bottom: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .apply-container form input{
+        padding: 10px 20px;
+        outline: none;
+        width: 250px;
+    }
+    .apply-container form button{
+        align-items: center;
+        text-align: center;
+        font-size:13px ;
+        padding: 7px 14px;
+        margin-top: 10px;
+        border: #088178 solid 1px;
+        background-color: #088178;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        background-image: url(/img/banners/b1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 10vh;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .banner .up h1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 10px;
+        color: #000;
+        padding: 10px 0 ;
+        font-size: 25px;
+    }
+}
+
